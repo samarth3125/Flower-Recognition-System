@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flower Recognition System</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- TensorFlow.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.10.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+</head>
+<body>
+
+  <div class="container">
+    <h2>🌸 Flower Recognition</h2>
+    <div class="subtitle">
+      AI-based flower identification using Web ML
+    </div>
+
+    <video id="video" autoplay playsinline></video>
+
+    <button onclick="capture()">Capture & Identify</button>
+
+    <div id="result">
+      Loading model and dataset...
+    </div>
+
+    <footer>
+      Mini Project • Pure Web Based AI Demo
+    </footer>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
